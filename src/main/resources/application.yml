@@ -1,0 +1,37 @@
+spring:
+  # 环境 dev|test|prod
+  profiles:
+    active: @profileActive@
+  application:
+    name: chant-www
+    # json时间格式
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+  # servlet
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+# 服务器配置
+server:
+  tomcat:
+    max-http-post-size: 20971520
+  max-http-header-size: 1024000
+#  servlet:
+#    context-path: /api
+# 日志配置
+logging:
+  file: logs/api_platform.log
+  path: logs/api_platform
+  level:
+    root: info
+    com.chant.api: debug
+# jwt
+jwt:
+  iss: api
+  expire-time: 1080000
+  enable: true
+

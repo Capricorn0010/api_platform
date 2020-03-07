@@ -1,0 +1,6 @@
+server:
+  port: 80
+# jwt
+jwt:
+  enable: true
+
