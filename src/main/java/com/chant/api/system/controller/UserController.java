@@ -19,7 +19,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@ApiOperation("单记录")
+	@ApiOperation("测试单记录")
 	@GetMapping("/{id}")
 	public User getById(@PathVariable @ApiParam(value = "id", example = "1" ,required = true) Long id) {
 		return new User().setName("user");
