@@ -15,7 +15,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<fastjson.version>1.2.58</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<swagger.version>2.9.2</swagger.version>
 		<io.jsonwebtoken.version>0.9.0</io.jsonwebtoken.version>
 		<skipTests>true</skipTests>
